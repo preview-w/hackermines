@@ -1,5 +1,4 @@
-<!DOCTYPE html><html lang="pt-BR"><!-- Mirrored from vktmines.devluar.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jan 2025 06:53:27 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
-
+<!DOCTYPE html><html lang="pt-BR"><head>
 	<meta charset="UTF-8">
 		<title>HACKER MINES</title>
 <meta name="robots" content="max-image-preview:large">
@@ -10,6 +9,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
 /*! This file is auto-generated */
 !function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
 </script>
+<!-- Meta Pixel Code -->
+
 <link rel="stylesheet" id="bdt-uikit-css" href="css/bdt-uikit.css" media="all">
 <link rel="stylesheet" id="ep-helper-css" href="css/ep-helper.css" media="all">
 <style id="wp-emoji-styles-inline-css">
@@ -106,21 +107,25 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
             button.style.opacity = '0.5'; // Aplica opacidade ao botão
 
             // Gera porcentagem aleatória entre 93 e 99
-            var porcentagem = (Math.random() * (99 - 93) + 93).toFixed(2) + "%";
+            var porcentagem = "100%";
             widget4.innerHTML = porcentagem;
 
             // Mudar os ícones e aplicar as cores apenas a 4 ícones
+			const diamonds = Math.floor(Math.random() * (6 - 4 + 1)) + 4;
+			const bombs = Math.floor(Math.random() * (5 - 3 + 1)) + 3;
             var modifiedIndices = [];
-            while (modifiedIndices.length < 24) { // original 4
+            while (modifiedIndices.length < diamonds) { // original 4
                 var index = Math.floor(Math.random() * iconContainers.length);
                 if (!modifiedIndices.includes(index)) {
                     modifiedIndices.push(index);
                     var container = iconContainers[index];
                     var icon = container.querySelector('i');
-                    container.innerHTML = '<i class="fa fa-star" style="color: #ffffff;"></i>'; // Altera o ícone para "star" e define a cor como branco
-                    container.style.backgroundColor = '#fc9b0e'; // Define o background como #fc9b0e
+                    container.innerHTML = '<?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 96.04" style="enable-background:new 0 0 122.88 96.04" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><path class="st0" d="M59.07,96.03L1.15,29.77h38.01L59.07,96.03L59.07,96.03L59.07,96.03z M61.18,0.11L45.89,25.24H77.6L61.18,0.11 L61.18,0.11z M82.18,25.07L65.17,0h31.45L82.18,25.07L82.18,25.07z M41.65,25.31L56.55,0H24.61L41.65,25.31L41.65,25.31z M101.71,2.98L86.67,25.24h36.21L101.71,2.98L101.71,2.98z M22.26,2.98l15.81,22.26H0L22.26,2.98L22.26,2.98L22.26,2.98z M44.73,29.57h33.63L62.04,95.04L44.73,29.57L44.73,29.57L44.73,29.57z M64.91,96.04l57.23-66.27l-38.01,0L64.91,96.04L64.91,96.04 L64.91,96.04z"/></g></svg>'; // Altera o ícone para "star" e define a cor como branco
+                    container.style.backgroundColor = '#005e16'; // Define o background como #fc9b0e
                 }
             }
+
+			document.getElementById("apostWithMines").innerText = `${bombs} minas`
 
             var remainingTime = cooldown;
 
@@ -173,7 +178,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -183,7 +188,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -193,7 +198,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -203,7 +208,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -213,7 +218,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -227,7 +232,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -237,7 +242,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -247,7 +252,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -257,7 +262,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -267,7 +272,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -281,7 +286,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -291,7 +296,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -301,7 +306,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -311,7 +316,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -321,7 +326,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -335,7 +340,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -345,7 +350,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -355,7 +360,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -365,7 +370,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -375,7 +380,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -389,7 +394,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -399,7 +404,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -409,7 +414,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -419,7 +424,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -429,7 +434,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
-			<i aria-hidden="true" class="fas fa-circle"></i>			</div>
+			<i aria-hidden="true" class="fas fa-bomb" style="color: #FF0000;"></i>			</div>
 		</div>
 				</div>
 				</div>
@@ -446,8 +451,9 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-element elementor-element-27397c27 elementor-widget elementor-widget-heading" data-id="27397c27" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.20.0 - 26-03-2024 */
-.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">Assertividade de:</h2>		</div>
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">Assertividade de:</h2>	 <h2 class="elementor-heading-title elementor-size-default">Aposte com: <strong style="color: #13ff5f" id="apostWithMines">-- minas</strong></h2>		</div>
 				</div>
+				
 				</div>
 		<div class="elementor-element elementor-element-c63a9cd e-con-full e-flex e-con e-child" data-id="c63a9cd" data-element_type="container">
 				<div class="elementor-element elementor-element-6fe53ae9 elementor-widget elementor-widget-text-editor" data-id="6fe53ae9" data-element_type="widget" id="porcentagem" data-widget_type="text-editor.default">
@@ -540,7 +546,7 @@ border-radius: 10px;
 					
 				
 				
-		<link rel="stylesheet" id="ep-icon-mobile-menu-css" href="ep-icon-mobile-menu.html" media="all">
+		<link rel="stylesheet" id="ep-icon-mobile-menu-css" href="css/ep-icon-mobile-menu.css" media="all">
 <link rel="stylesheet" id="tippy-css" href="css/tippy.css" media="all">
 <script src="js/hello-frontend.min.js" id="hello-theme-frontend-js"></script>
 <script src="js/jquery.min.js" id="jquery-core-js"></script>
@@ -577,6 +583,4 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/appgebe.com\/wp-admin\/ad
 <script src="js/jquery.sticky.min.js" id="e-sticky-js"></script>
 	
 
-<audio src="media/Gameplay-Strike-Hit-02.wav" id="sound"></audio><audio src="media/Gameplay-Strike-Hit-02_1.wav" id="sound"></audio>
-
-</body><!-- Mirrored from vktmines.devluar.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jan 2025 06:53:37 GMT --></html>
+<audio src="media/Gameplay-Strike-Hit-02.wav" id="sound"></audio><audio src="media/Gameplay-Strike-Hit-02_1.wav" id="sound"></audio></body></html>
